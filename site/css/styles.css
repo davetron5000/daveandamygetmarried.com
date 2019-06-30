@@ -1,14 +1,392 @@
-html {
-  font-size: 21px;
-  font-family: Avenir sans-serif;
-  color: #111;
-  background-color: #ddd;
-
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color: #ddd;
-    background-color: #111;
-  }
+/* line 17, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+@font-face {
+  font-family: "Angelina";
+  src: local("☺"), url(/fonts/angelina-webfont.ttf) format('truetype'), url(/fonts/angelina-webfont.woff) format('woff'), url(/fonts/angelina-webfont.svg) format('svg');
+}
+
+/* line 20, ../../app/stylesheets/styles.scss */
+body.bp {
+  background-image: url(/images/vieques-background.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  color: #2f3f2f;
+}
+
+/* line 27, ../../app/stylesheets/styles.scss */
+html, body, body.bp {
+  height: 100%;
+  font-family: Palatino, Georgia, Times, serif;
+  line-height: 20px;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 34, ../../app/stylesheets/styles.scss */
+body {
+  background-color: #568cb0;
+}
+
+/* line 38, ../../app/stylesheets/styles.scss */
+.mainpage {
+  background-color: none;
+  text-align: center;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 46, ../../app/stylesheets/styles.scss */
+#header {
+  background: #fdf9cc;
+  text-align: center;
+  font-family: "Angelina";
+  margin-bottom: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -o-border-bottom-left-radius: 20px;
+  -ms-border-bottom-left-radius: 20px;
+  -khtml-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -o-border-bottom-right-radius: 20px;
+  -ms-border-bottom-right-radius: 20px;
+  -khtml-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/* line 52, ../../app/stylesheets/styles.scss */
+#header h1 {
+  text-shadow: #729572 1px 2px 1px;
+  font-size: 80px;
+  line-height: 80px;
+  color: #2f3f2f;
+  margin: 0;
+}
+/* line 58, ../../app/stylesheets/styles.scss */
+#header h1 a {
+  text-decoration: none;
+  color: #2f3f2f;
+}
+/* line 61, ../../app/stylesheets/styles.scss */
+#header h1 a:hover, #header h1 a:visited {
+  color: #2f3f2f;
+}
+/* line 66, ../../app/stylesheets/styles.scss */
+#header h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+
+/* line 73, ../../app/stylesheets/styles.scss */
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* line 78, ../../app/stylesheets/styles.scss */
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 84, ../../app/stylesheets/styles.scss */
+#main-content {
+  overflow: auto;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fdf9cc;
+  padding: 20px;
+}
+
+/* line 91, ../../app/stylesheets/styles.scss */
+#nav {
+  float: left;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #568cb0;
+  color: #fdf9cc;
+  padding: 20px;
+  width: 260px;
+}
+/* line 98, ../../app/stylesheets/styles.scss */
+#nav ul {
+  text-align: left;
+}
+/* line 100, ../../app/stylesheets/styles.scss */
+#nav ul li {
+  font-size: 32px;
+  font-family: 'Angelina';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 105, ../../app/stylesheets/styles.scss */
+#nav ul li ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 108, ../../app/stylesheets/styles.scss */
+#nav ul li ul li {
+  font-family: Palatino, Georgia, Times, serif;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+/* line 117, ../../app/stylesheets/styles.scss */
+#nav ul a {
+  color: #fdf9cc;
+}
+/* line 119, ../../app/stylesheets/styles.scss */
+#nav ul a:hover {
+  color: white;
+}
+
+/* line 126, ../../app/stylesheets/styles.scss */
+#text-content {
+  text-align: justify;
+  margin-left: 320px;
+}
+/* line 127, ../../app/stylesheets/styles.scss */
+#text-content a {
+  color: #455c45;
+}
+/* line 129, ../../app/stylesheets/styles.scss */
+#text-content a:visited {
+  color: #506a50;
+}
+/* line 132, ../../app/stylesheets/styles.scss */
+#text-content a:hover {
+  color: #668766;
+}
+/* line 138, ../../app/stylesheets/styles.scss */
+#text-content p {
+  padding: 10px;
+  text-indent: 20px;
+}
+/* line 142, ../../app/stylesheets/styles.scss */
+#text-content h4, #text-content h5 {
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 146, ../../app/stylesheets/styles.scss */
+#text-content h4 {
+  font-size: 20px;
+}
+/* line 149, ../../app/stylesheets/styles.scss */
+#text-content h5 {
+  font-size: 18px;
+  text-indent: 10px;
+  margin-top: 10px;
+}
+/* line 154, ../../app/stylesheets/styles.scss */
+#text-content table {
+  margin-top: 0;
+  width: 100%;
+}
+/* line 158, ../../app/stylesheets/styles.scss */
+#text-content table caption {
+  display: none;
+}
+/* line 161, ../../app/stylesheets/styles.scss */
+#text-content table thead th {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: solid 4px #568cb0;
+}
+/* line 167, ../../app/stylesheets/styles.scss */
+#text-content table tbody td {
+  font-size: 14px;
+  padding-right: 24px;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid thin #568cb0;
+  color: #5b795b;
+}
+/* line 173, ../../app/stylesheets/styles.scss */
+#text-content table tbody td ul {
+  list-style: circle;
+}
+/* line 175, ../../app/stylesheets/styles.scss */
+#text-content table tbody td ul li {
+  list-style-position: outside;
+  text-indent: 0;
+}
+/* line 183, ../../app/stylesheets/styles.scss */
+#text-content table tbody td.airline-name {
+  font-weight: bold;
+  color: #2f3f2f;
+}
+/* line 188, ../../app/stylesheets/styles.scss */
+#text-content table.ferry caption {
+  display: table-caption;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  color: #568cb0;
+  margin-bottom: 10px;
+}
+/* line 197, ../../app/stylesheets/styles.scss */
+#text-content ul li {
+  list-style: circle;
+  text-indent: 40px;
+  list-style-position: inside;
+}
+
+/* line 205, ../../app/stylesheets/styles.scss */
+ul.events {
+  text-align: left;
+  font-size: 14px;
+}
+
+/* line 210, ../../app/stylesheets/styles.scss */
+blockquote {
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* line 216, ../../app/stylesheets/styles.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 220, ../../app/stylesheets/styles.scss */
+dt {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* line 226, ../../app/stylesheets/styles.scss */
+#faq-list dd.faq-answer {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+/* line 230, ../../app/stylesheets/styles.scss */
+#faq-list dd.faq-answer ul {
+  padding-left: 20px;
+}
+/* line 232, ../../app/stylesheets/styles.scss */
+#faq-list dd.faq-answer ul li {
+  text-align: left;
+  font-size: 14px;
+  list-style: circle;
+  text-indent: 0px;
+  list-style-position: outside;
+}
+
+/* line 243, ../../app/stylesheets/styles.scss */
+ol#directions li {
+  list-style: decimal;
+  list-style-position: inside;
+  text-indent: 32px;
+  font-size: 12px;
+}
+
+/* line 251, ../../app/stylesheets/styles.scss */
+p.note {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 80px;
+  padding-top: 0px;
+}
+
+/* line 259, ../../app/stylesheets/styles.scss */
+ul#hints li {
+  margin-bottom: 20px;
+}
+
+/* line 264, ../../app/stylesheets/styles.scss */
+.header-image {
+  text-align: center;
+}
+
+/* line 268, ../../app/stylesheets/styles.scss */
+.ceremony-text {
+  font-size: 14px;
+}
+
+/* line 272, ../../app/stylesheets/styles.scss */
+ol#ceremony-toc li {
+  list-style: decimal;
+  list-style-position: inside;
+  text-indent: 32px;
 }
